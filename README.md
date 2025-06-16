@@ -50,34 +50,35 @@ make install
 
 ## Configuration
 
- When you first run generating an invoice without an `invoice-generator.toml`
- file in the directory, the program will prompt a question:
+If you run the invoice generation for the first time without an
+`invoice-generator.toml` file in the directory, the program will ask you a
+question:
 
 ```shell
 The file invoice-generator.toml was not found in the current directory. Want to create it? (Y/n)
 ```
 
-Type `Y`, and then you need to open the created `invoice-generator.toml` file
-and fill in the parameters of your invoice there. This completes the
-configuration setup, now you can generate invoices.
+Type `Y`, then open the generated `invoice-generator.toml` file and fill in your
+invoice parameters. Once this is done, the configuration setup is complete and
+you can start generating invoices.
 
 ## General usage
 
-To generate a new invoice, use the command:
+To generate a new invoice, run the following command:
 
 ```shell
 invoice-generator g
 ```
 
-In addition, you can pass the date (month.year) of the desired service period as
-an argument as follows:
+In addition, you can specify the date (month.year) of the desired service period
+as an argument, as follows:
 
 ```shell
 invoice-generator g 10.2023
 ```
 
-You will get an invoice for the desirable period (previous month for example)
-with the correct dates for all presented fields.
+You will receive an invoice for the desired period (for example, the previous
+month) with the correct dates in all relevant fields.
 
 ## Help information
 
@@ -93,12 +94,13 @@ VERSION:
    0.9
 
 DESCRIPTION:
-   This is a simple tool for generating invoices in automatic mode. There is no need to fill out anything every month. You do it once and that's it.
+   This is a simple tool for automatically generating invoices. No need to fill anything out every month, you set it up once, and that's it.
 
 COMMANDS:
-   generate, g  Generate a new invoice based on invoice-generator.toml information and current date.
-                Alternatively, you can pass the date (month.year) of the desired service period as anargument like this: invoice-generator g 10.2023
-   help, h      Shows a list of commands or help for one command
+   generate, g  Generate a new invoice based on the information in invoice-generator.toml and the current date.
+                Alternatively, you can provide the date (month.year) for the desired service period as an argument, like this: invoice-generator g 10.2023
+
+   help, h      Show a list of commands or help for a specific command.
 
 GLOBAL OPTIONS:
    --help, -h     show help
@@ -113,4 +115,4 @@ GLOBAL OPTIONS:
 
 ## Requiremrnts
 
-There are no requirements and additional dependencies it will work on (Windows/Linux/MacOS).
+There are no requirements or additional dependencies, it works on Windows, Linux, and macOS.
