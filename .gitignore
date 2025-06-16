@@ -1,0 +1,12 @@
+*.idea/
+*__idea__/
+.DS_Store
+*.log
+*.db
+.vscode/
+.env
+.local/
+bin/
+build/
+dist/
+invoice-generator.toml
