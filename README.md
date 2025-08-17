@@ -3,7 +3,7 @@
 ![](https://img.shields.io/github/downloads/sesav/invoice-generator/total)
 ![](https://img.shields.io/github/repo-size/sesav/invoice-generator)
 ![](https://img.shields.io/github/languages/top/sesav/invoice-generator)
-
+![](https://img.shields.io/github/license/sesav/scapi-py)
 
 Invoice-generator is a simple tool for automatically generating invoices. No
 need to fill anything out every month, you set it up once, and it works.
@@ -113,6 +113,6 @@ GLOBAL OPTIONS:
 <img src="examples/SE-010123.png" max-width="880px" style="margin:10px 0 15px 0">
 </div>
 
-## Requiremrnts
+## Requirements
 
 There are no requirements or additional dependencies, it works on Windows, Linux, and macOS.
