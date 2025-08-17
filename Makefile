@@ -15,7 +15,7 @@ build: bin-linux-amd64 bin-linux-arm bin-windows-amd64 bin-windows-arm bin-darwi
 sha = $(shell git rev-parse --short HEAD || cat SHA | tr -d ' \n')
 
 ifeq ($(VERSION),)
-VERSION = $(shell git describe --tags --match 'v*' | tr -d 'v \n')
+VERSION = $(shell git describe --tags | tr -d 'v \n')
 realv = $(shell printf $(VERSION) | cut -d'-' -f1)
 ifneq ($(VERSION),$(realv))
 commits = $(shell printf $(VERSION) | cut -d'-' -f2)
