@@ -116,3 +116,8 @@ GLOBAL OPTIONS:
 ## Requirements
 
 There are no requirements or additional dependencies, it works on Windows, Linux, and macOS.
+
+
+## License
+
+Open sourced under the [MIT license](LICENSE).
