@@ -42,10 +42,16 @@ Clone the repo:
 git clone https://github.com/sesav/invoice-generator.git
 ```
 
-Run the command:
+Install [just](https://github.com/casey/just) command runner, then run:
 
 ```shell
-make install
+just install
+```
+
+You can also build for all platforms:
+
+```shell
+just build
 ```
 
 ## Configuration

@@ -23,9 +23,12 @@ jobs:
           go-version: 'stable'
           
       -
+        name: Install just
+        uses: extractions/setup-just@v2
+          
+      -
         name: Build
-        run: >-
-          make -j $(nproc) build
+        run: just build
       -
         name: Release
         uses: softprops/action-gh-release@v1
